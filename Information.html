@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>EMS｜EMS緊急メール管理画面</title>
+</head>
+<body>
+
+<h3> EMS｜緊急メール管理システム </h3>
+<!-- バナー（リンクなし） -->
+<div class="news-banner">
+  <div class="news-banner__content">
+    <p>令和7年11月25日 メール点検</p>
+  </div>
+</div>
+
+<style>
+  /* バナー本体 */
+  .news-banner {
+    display: flex;
+    align-items: center; /* 垂直中央揃え */
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    overflow: hidden;
+  }
+
+  /* バナー内コンテンツ */
+  .news-banner__content {
+    display: inline-block;
+    color: #fff;
+    white-space: nowrap;
+    animation: animate-banner 20s linear infinite;
+    padding-left: 100%;
+  }
+
+  /* バナー内の要素をすべて選択 */
+  .news-banner__content > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1; /* 行の高さを調整 */
+  }
+
+  /* 横にスクロールさせるアニメーション */
+  @keyframes animate-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+<hr>
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="index.html">
+  <button class="favorite styled" type="button">ホーム</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="Information.html">
+  <button class="favorite styled" type="button">お知らせ</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="setting.html">
+  <button class="favorite styled" type="button">設定</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="sistem.html">
+  <button class="favorite styled" type="button">システム連携</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="https://script.google.com/macros/s/AKfycbxQjhfCe20HsM0VzrMJn1eHBmTNexv9kvXrC9vd6PmjdbflnHLYwZXc1MWc1qsoYuxqRA/exec">
+  <button class="favorite styled" type="button">メール配信</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSlrpQetXmOA1dvJZYfdPRCvZlYYgaQdHVMA_cIMQwSgWuLTFjvSxh7yvpeQd13REtgW4WVrj4TDEi/pubhtml?gid=0&single=true">
+  <button class="favorite styled" type="button">配信履歴</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+<br>
+<h2>お知らせ</h2>
+<hr>
+
+<h4>【復旧済み】RAIDENの発信処理に断続的な遅延が発生しています</h4>
+先ほど発生していた発信処理の遅延は、11時57分に解消しました。</p>
+
+■原因
+一部のお客様向けの連携機能で不具合が発生したことで、配信処理全体が滞っておりました。</p>
+
+■対処・対策
+不具合の原因箇所を修正し、該当の連携機能をリセットすることで不具合解消しました。
+今後、処理時間に制限を設ける改修を行い、万が一似たような問題が発生しても影響が広がらないよう対策を実施します。</p>
+
+この度はご迷惑をお掛けし、誠に申し訳ございませんでした。</p>
+再発防止に向けて、社員一同取り組んで参ります。</p>
+
+現在、RAIDENの発信処理に断続的な遅延が発生しています。</p>
+対処を進めておりますが、まだ不具合は解消しておりません。</p>
+
+■障害発生時間</p>
+9月25日（木）8時00分頃〜</p>
+
+■対象サービス</p>
+以下のURLでご提供しているサービス</p>
+https://raiden2.ktaiwork.jp/</p>
+
+■影響内容</p>
+サービス画面にログインして発信操作は可能ですが、発信処理に不具合があり通常より時間がかかっています。</p>
+発信操作した内容が破棄されることはありませんが、到達までに遅れが生じています。</p>
+メールなどがすぐに届かない場合でも、そのままお待ちください。</p>
+再度発信すると、複数回送信されてしまう可能性があります。</p>
+
+なお、他のURLで提供しているサービスには影響はありません。</p>
+復旧しましたら、あらためてご報告いたします。</p>
+原因や影響範囲についても判明次第ご案内いたします</p>
+
+
+
+</body>
+</html>

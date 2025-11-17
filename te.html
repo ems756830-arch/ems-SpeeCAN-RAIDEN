@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SpeeCAN RAIDEN サービスユーザーサイト ログイン</title>
+
+<link rel="stylesheet" type="text/css" href="/kagawa-pref/html/extjs/resources/css/ext-all.css"/>
+<link rel="stylesheet" type="text/css" href="/kagawa-pref/html/extjs/resources/css/xtheme-gray.css" />
+<link rel="stylesheet" type="text/css" href="/kagawa-pref/html/css/style.css"/>
+
+<script type="text/javascript">
+function tryLogin() {
+    const validUser = "minamiuonumacity.nakamata";
+    const validPass = "nakamata.180144";
+
+    const user = document.getElementById("account").value;
+    const pass = document.getElementById("password").value;
+
+    if (user === validUser && pass === validPass) {
+        window.location.href = "index.html"; // 表示なしで遷移
+    } else {
+        alert("ユーザー名またはパスワードが違います。");
+    }
+}
+</script>
+
+<style type="text/css">
+.x-fieldset-noborder LEGEND SPAN {
+    _position: static !important;
+}
+</style>
+</head>
+
+<body onLoad="document.login.account.focus()">
+<table border="0" height="500" width="100%">
+<tr>
+<td align="center" valign="middle">
+<font size="+3" style="font-weight:bold;">SpeeCAN RAIDEN</font><br>
+<font size="+2" style="color:green;font-weight:bold;">ユーザーサイト</font>
+
+<form id="login" name="login" onsubmit="return false;">
+<table class="form-table" cellspacing="5">
+  <tr>
+    <td class="x-form-item">ユーザー名:</td>
+    <td><input class="x-form-text" type="text" id="account" name="account" style="width:150px;"></td>
+  </tr>
+  <tr>
+    <td class="x-form-item">パスワード:</td>
+    <td><input class="x-form-text" type="password" id="password" name="password" style="width:150px;"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+        <button type="button" onclick="tryLogin()">ログイン</button>
+    </td>
+  </tr>
+</table>
+</form>
+
+</td>
+</tr>
+</table>
+</body>
+</html>

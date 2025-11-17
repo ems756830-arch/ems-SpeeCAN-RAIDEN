@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>EMS｜EMS緊急メール管理画面</title>
+</head>
+<body>
+
+<h3> EMS｜緊急メール管理システム </h3>
+<!-- バナー（リンクなし） -->
+<div class="news-banner">
+  <div class="news-banner__content">
+    <p>令和7年11月25日 メール点検</p>
+  </div>
+</div>
+
+<style>
+  /* バナー本体 */
+  .news-banner {
+    display: flex;
+    align-items: center; /* 垂直中央揃え */
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    overflow: hidden;
+  }
+
+  /* バナー内コンテンツ */
+  .news-banner__content {
+    display: inline-block;
+    color: #fff;
+    white-space: nowrap;
+    animation: animate-banner 20s linear infinite;
+    padding-left: 100%;
+  }
+
+  /* バナー内の要素をすべて選択 */
+  .news-banner__content > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1; /* 行の高さを調整 */
+  }
+
+  /* 横にスクロールさせるアニメーション */
+  @keyframes animate-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+<hr>
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="index.html">
+  <button class="favorite styled" type="button">ホーム</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="Information.html">
+  <button class="favorite styled" type="button">お知らせ</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="setting.html">
+  <button class="favorite styled" type="button">設定</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="sistem.html">
+  <button class="favorite styled" type="button">システム連携</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="https://script.google.com/macros/s/AKfycbxQjhfCe20HsM0VzrMJn1eHBmTNexv9kvXrC9vd6PmjdbflnHLYwZXc1MWc1qsoYuxqRA/exec">
+  <button class="favorite styled" type="button">メール配信</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSlrpQetXmOA1dvJZYfdPRCvZlYYgaQdHVMA_cIMQwSgWuLTFjvSxh7yvpeQd13REtgW4WVrj4TDEi/pubhtml?gid=0&single=true">
+  <button class="favorite styled" type="button">配信履歴</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+<h2>設定</h2>
+<div class="checkbox-right">
+  <label for="scales">PS接続を有効にする</label>
+  <input type="checkbox" id="scales" name="scales" checked />
+</div>
+
+<style>
+  .checkbox-right {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* ラベルとチェックボックスの間隔 */
+  }
+
+  .checkbox-right label {
+    order: 1; /* ラベルを先に表示 */
+  }
+
+  .checkbox-right input[type="checkbox"] {
+    order: 2; /* チェックボックスを後に表示 */
+  }
+</style>
+
+<form>
+  <fieldset>
+    <legend>ユーザー情報</legend>
+    <label for="name">氏名:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="email">メールアドレス:</label>
+    <input type="email" id="email" name="email"><br>
+  </fieldset>
+
+  <fieldset>
+    <legend>受信設定（POP）</legend>
+    <label for="pop-server">POPサーバ:</label>
+    <input type="text" id="pop-server" name="pop-server"><br>
+
+    <label for="pop-port">受信ポート:</label>
+    <input type="number" id="pop-port" name="pop-port" value="110"><br>
+
+    <label>
+      <input type="checkbox" name="pop-ssl"> SSL接続を利用する
+    </label><br>
+
+    <label for="account">アカウント:</label>
+    <input type="text" id="account" name="account"><br>
+
+    <label for="password">パスワード:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="receive-server">受信サーバ:</label>
+    <input type="text" id="receive-server" name="receive-server"><br>
+
+    <label>
+      <input type="checkbox" name="connect-smtp"> 送信メールサーバに接続する
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <legend>送信設定（SMTP）</legend>
+    <label for="smtp-server">SMTPサーバ:</label>
+    <input type="text" id="smtp-server" name="smtp-server"><br>
+
+    <label for="smtp-port">送信ポート:</label>
+    <input type="number" id="smtp-port" name="smtp-port" value="25"><br>
+
+    <label>
+      <input type="checkbox" name="smtp-ssl"> SSL接続を利用する
+    </label><br>
+
+    <label for="smtp-method">SMTPサーバ接続方式:</label>
+    <select id="smtp-method" name="smtp-method">
+      <option value="">選択してください</option>
+      <option value="plain">PLAIN</option>
+      <option value="login">LOGIN</option>
+      <option value="cram-md5">CRAM-MD5</option>
+    </select><br>
+
+    <label>
+      <input type="checkbox" name="pop-before-smtp"> 接続前にPOPを行うかチェック
+    </label>
+  </fieldset>
+
+  <button type="submit">保存</button>
+</form>
+
+
+
+</body>
+</html>

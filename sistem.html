@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>EMS｜EMS緊急メール管理画面</title>
+</head>
+<body>
+
+<h3> EMS｜緊急メール管理システム </h3>
+<!-- バナー（リンクなし） -->
+<div class="news-banner">
+  <div class="news-banner__content">
+    <p>令和7年11月25日 メール点検</p>
+  </div>
+</div>
+
+<style>
+  /* バナー本体 */
+  .news-banner {
+    display: flex;
+    align-items: center; /* 垂直中央揃え */
+    height: 30px;
+    width: 100%;
+    background-color: orange;
+    overflow: hidden;
+  }
+
+  /* バナー内コンテンツ */
+  .news-banner__content {
+    display: inline-block;
+    color: #fff;
+    white-space: nowrap;
+    animation: animate-banner 20s linear infinite;
+    padding-left: 100%;
+  }
+
+  /* バナー内の要素をすべて選択 */
+  .news-banner__content > * {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 1; /* 行の高さを調整 */
+  }
+
+  /* 横にスクロールさせるアニメーション */
+  @keyframes animate-banner {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+</style>
+<hr>
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="index.html">
+  <button class="favorite styled" type="button">ホーム</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="Information.html">
+  <button class="favorite styled" type="button">お知らせ</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="setting.html">
+  <button class="favorite styled" type="button">設定</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="sistem.html">
+  <button class="favorite styled" type="button">システム連携</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="https://script.google.com/macros/s/AKfycbzQOpT5Gy-xj_PZ7aQD8U8WzvlwZdF6CYevp3XUO2uGm3FfU_yWI_F-61jrBeK6q5FB2w/exec">
+  <button class="favorite styled" type="button">メール配信</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+
+
+<!-- ボタン（クリックでリンク遷移） -->
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vTSlrpQetXmOA1dvJZYfdPRCvZlYYgaQdHVMA_cIMQwSgWuLTFjvSxh7yvpeQd13REtgW4WVrj4TDEi/pubhtml?gid=0&single=true">
+  <button class="favorite styled" type="button">配信履歴</button>
+</a>
+
+<style>
+  a {
+    text-decoration: none;
+  }
+
+  .styled {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    border-radius: 10px;
+    background-color: tomato;
+    background-image: linear-gradient(
+      to top left,
+      rgb(0 0 0 / 0.2),
+      rgb(0 0 0 / 0.2) 30%,
+      transparent
+    );
+    box-shadow:
+      inset 2px 2px 3px rgb(255 255 255 / 0.6),
+      inset -2px -2px 3px rgb(0 0 0 / 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .styled:hover {
+    background-color: red;
+  }
+
+  .styled:active {
+    box-shadow:
+      inset -2px -2px 3px rgb(255 255 255 / 0.6),
+      inset 2px 2px 3px rgb(0 0 0 / 0.6);
+  }
+</style>
+
+<h2>設定</h2>
+<form id="systemLinkForm">
+  <fieldset>
+    <legend>システム連携設定（模擬）</legend>
+
+    <!-- 連携先種別 -->
+    <label for="systemType">連携先種別:</label>
+    <select id="systemType" name="systemType">
+      <option value="">選択してください</option>
+      <option value="jalert">J-ALERT（全国瞬時警報）</option>
+      <option value="local">地方行政機器</option>
+      <option value="disaster">防災情報システム</option>
+      <option value="custom">その他（手動設定）</option>
+    </select><br>
+
+    <!-- 接続方式 -->
+    <label for="protocol">接続方式:</label>
+    <select id="protocol" name="protocol">
+      <option value="">選択してください</option>
+      <option value="http">HTTP</option>
+      <option value="https">HTTPS</option>
+      <option value="socket">ソケット通信</option>
+      <option value="serial">シリアル接続</option>
+    </select><br>
+
+    <!-- 接続先アドレス -->
+    <label for="endpoint">接続先アドレス:</label>
+    <input type="text" id="endpoint" name="endpoint" placeholder="例: 192.168.1.100:8080"><br>
+
+    <!-- 認証情報 -->
+    <label for="authKey">認証キー／トークン:</label>
+    <input type="text" id="authKey" name="authKey" placeholder="APIキーまたは認証トークン"><br>
+
+    <!-- 通信間隔 -->
+    <label for="interval">通信間隔（秒）:</label>
+    <input type="number" id="interval" name="interval" value="60"><br>
+
+    <!-- 動作確認 -->
+    <button type="button" onclick="testConnection()">接続テスト</button>
+    <span id="testResult" style="margin-left:10px;"></span>
+
+    <!-- 保存 -->
+    <br><br>
+    <button type="submit">設定を保存</button>
+  </fieldset>
+</form>
+
+<script>
+  function testConnection() {
+    const system = document.getElementById('systemType').value;
+    const endpoint = document.getElementById('endpoint').value;
+    const result = document.getElementById('testResult');
+
+    if (!system || !endpoint) {
+      result.textContent = '⚠️ 連携種別と接続先を入力してください';
+      result.style.color = 'orange';
+      return;
+    }
+
+    result.textContent = '接続テスト 成功';
+    result.style.color = 'green';
+  }
+
+  document.getElementById('systemLinkForm').addEventListener('submit', e => {
+    e.preventDefault();
+    alert('設定を保存しました（模擬）');
+  });
+</script>
+
+
+</body>
+</html>
